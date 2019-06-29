@@ -8,6 +8,17 @@
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")
+        <style>
+            .menu {
+                display:flexbox ;
+                flex-direction :column;
+                
+            }
+             .menu li a{
+               color:black ;
+                
+            }
+        </style>
     </head>
     <body>
         @Html.Partial("NavBar")
@@ -15,6 +26,10 @@
         <div id="body">
                @RenderSection("featured", required: false)
             <section class="content-wrapper main-content clear-fix">
+                 <ul id="menu">
+                            <li>@Html.ActionLink("link.Name", "link.Action", "link.Controllor")</li>
+                          <li>@Html.ActionLink("link.Name", "link.Action", "link.Controllor")</li>
+                        </ul>
            @RenderBody()
             </section>
         </div>

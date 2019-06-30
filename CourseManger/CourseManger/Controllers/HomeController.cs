@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CourseManger.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -27,6 +28,14 @@ namespace CourseManger.Controllers
             ViewBag.Message = "你的联系方式页。";
 
             return View();
+        }
+     
+        [ChildActionOnly]
+        public ActionResult NavBar()
+        {
+            var site = new Websiteinfo();
+            ViewBag.Site = site;
+            return PartialView("/Views/Shared/NavBar.cshtml");
         }
     }
 }

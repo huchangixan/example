@@ -172,9 +172,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201912040055237_create.cs" />
-    <Compile Include="Migrations\201912040055237_create.Designer.cs">
-      <DependentUpon>201912040055237_create.cs</DependentUpon>
+    <Compile Include="Migrations\201907010720131_create.cs" />
+    <Compile Include="Migrations\201907010720131_create.Designer.cs">
+      <DependentUpon>201907010720131_create.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Classes.cs">
@@ -189,14 +189,6 @@
     </Compile>
     <Compile Include="Models\CourseManger.Context.cs">
       <SubType>Code</SubType>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
-    <Compile Include="Models\CourseManger.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
-    <Compile Include="Models\CourseManger.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
@@ -364,8 +356,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201912040055237_create.resx">
-      <DependentUpon>201912040055237_create.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201907010720131_create.resx">
+      <DependentUpon>201907010720131_create.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -16,9 +16,12 @@ namespace CourseManger.Models
     public partial class Classes
     {
         [Key]
-        [Required]
+        [Required(ErrorMessage="请填写班级名称")]
+        [StringLength(20,MinimumLength=2,ErrorMessage="班级名称至少包含两个名称")]
+        [Display(Name = "班级名称")]
         public int id { get; set; }
         public string Name { get; set; }
+         [Display(Name = "班主任")]
         public Nullable<int> TeacherId { get; set; }
     }
 }

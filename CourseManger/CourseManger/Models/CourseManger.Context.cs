@@ -29,5 +29,6 @@ namespace CourseManger.Models
         public DbSet<CourseMangements> CourseMangements { get; set; }
         public DbSet<Students> Students { get; set; }
         public DbSet<Teachers> Teachers { get; set; }
+        public DbSet<user> user { get; set; }
     }
 }

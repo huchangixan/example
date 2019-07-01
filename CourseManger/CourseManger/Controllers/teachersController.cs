@@ -42,7 +42,7 @@ namespace CourseManger.Controllers
             return View();
         }
 
-        //
+        
         // POST: /teachers/Create
 
         [HttpPost]
